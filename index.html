@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>put — AI専用プロンプトエディタ | 自由に書いてシームレスに流し込む</title>
+  <meta name="description" content="putはAIと働く人のための専用プロンプトエディタ。自由に書けて保存もできてシームレスに流し込む。改行で誤送信する煩わしさから解放されます。macOS対応、2026年4月28日リリース予定。">
+  <meta property="og:title" content="put — AI専用プロンプトエディタ">
+  <meta property="og:description" content="自由に書けて保存もできてシームレスに流し込む。AIと働く人のためのAI専用エディタ。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://put-prompt.run">
+  <meta property="og:image" content="https://put-prompt.run/ogp.png">
+  <meta property="og:site_name" content="put">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@put_prompt">
+  <meta name="twitter:title" content="put — AI専用プロンプトエディタ">
+  <meta name="twitter:description" content="自由に書けて保存もできてシームレスに流し込む。AIと働く人のためのAI専用エディタ。">
+  <meta name="twitter:image" content="https://put-prompt.run/ogp.png">
+  <link rel="canonical" href="https://put-prompt.run">
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVWM6N0KS3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QVWM6N0KS3');
+  </script>
+</head>
+<body>
+
+  <!-- ===== Hero (Header + Demo) ===== -->
+  <section class="hero">
+    <div class="hero-inner">
+
+      <!-- Header bar -->
+      <div class="header-bar">
+        <div class="logo-area">
+          <span class="logo-p">P</span><span class="logo-ut">ut</span><span class="logo-cursor"></span>
+        </div>
+        <div class="share-buttons">
+          <a href="https://twitter.com/intent/tweet?text=put%20%E2%80%94%20AI%E5%B0%82%E7%94%A8%E3%83%97%E3%83%AD%E3%83%B3%E3%83%97%E3%83%88%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF&url=https://put-prompt.run" target="_blank" rel="noopener noreferrer" class="share-btn" title="Xでシェア">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://put-prompt.run" target="_blank" rel="noopener noreferrer" class="share-btn" title="Facebookでシェア">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://b.hatena.ne.jp/entry/s/put-prompt.run" target="_blank" rel="noopener noreferrer" class="share-btn" title="はてブ">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.47 2H3.53A1.45 1.45 0 0 0 2 3.47v17.06A1.45 1.45 0 0 0 3.47 22h17.06A1.45 1.45 0 0 0 22 20.53V3.47A1.45 1.45 0 0 0 20.47 2zM15.7 17.34a3.14 3.14 0 0 1-1.47.59 8.25 8.25 0 0 1-1.74.16H8.48V6h3.67a4.71 4.71 0 0 1 2.77.7 2.35 2.35 0 0 1 .92 2 2.39 2.39 0 0 1-.42 1.42 2.67 2.67 0 0 1-1.2.9v.05a2.72 2.72 0 0 1 1.52.84 2.5 2.5 0 0 1 .54 1.67 2.82 2.82 0 0 1-.58 1.76zm-4.3-7.86h-1.4v2.8h1.23c.64 0 1.1-.08 1.39-.25a1 1 0 0 0 .47-.93 1 1 0 0 0-.42-.89 2.12 2.12 0 0 0-1.27-.33zm.22 4.18h-1.62v3h1.56a2.78 2.78 0 0 0 1.54-.34 1.17 1.17 0 0 0 .49-1.05 1.16 1.16 0 0 0-.51-1.05 2.72 2.72 0 0 0-1.46-.36z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Copy -->
+      <h1 class="copy-en">
+        <span class="copy-you">you:</span> output from brain<br>
+        <span class="copy-me">me:</span> input to AI brain
+      </h1>
+      <p class="copy-ja">
+        自由に書けて保存もできてシームレスに流し込む<br>
+        AIと働く人のためのAI専用エディタ
+      </p>
+
+      <!-- Demo area -->
+      <div class="demo-area">
+        <!-- Instruction callout (PC) -->
+        <div class="demo-callout demo-callout-pc">
+          <div class="demo-callout-arrow"></div>
+          <p class="demo-callout-title">Putを体験しよう！</p>
+          <p class="demo-callout-text">右のPutテキストエリアに入力して<br><strong>Paste</strong>を押す（または<strong>⌘+Shift+Enter</strong>）と<br>左のAIウィンドウにテキストが流し込まれます</p>
+        </div>
+
+        <!-- Instruction callout (SP) -->
+        <div class="demo-callout demo-callout-sp">
+          <p class="demo-callout-title">Putを体験しよう！</p>
+          <div class="demo-callout-arrow-down"></div>
+        </div>
+
+        <!-- AI Window -->
+        <div class="demo-window demo-ai">
+          <div class="demo-titlebar demo-titlebar-ai-pc">
+            <div class="demo-dots">
+              <span class="dot dot-r"></span>
+              <span class="dot dot-y"></span>
+              <span class="dot dot-g"></span>
+            </div>
+            <span class="demo-title">AI Assistant</span>
+          </div>
+          <div class="demo-ai-body">
+            <div class="demo-chat" id="chatArea">
+              <div class="chat-msg chat-ai">
+                <p>こんにちは！何かお手伝いできることはありますか？</p>
+              </div>
+            </div>
+            <div class="demo-ai-input-area">
+              <div class="demo-ai-input" id="aiInput" contenteditable="false"></div>
+              <button class="demo-ai-send" id="aiSendBtn" disabled>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2L15 22L11 13L2 9L22 2Z"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- put Window -->
+        <div class="demo-window demo-put">
+          <div class="demo-titlebar demo-titlebar-put">
+            <div class="demo-dots">
+              <span class="dot dot-r"></span>
+              <span class="dot dot-y"></span>
+              <span class="dot dot-g"></span>
+            </div>
+            <span class="demo-title demo-title-put">put</span>
+            <!-- Saved prompt tabs -->
+            <div class="saved-tabs-area">
+              <div class="saved-tabs">
+                <div class="saved-tab" data-prompt="あなたはプロのコピーライターです。以下の文章をより魅力的に書き直してください。">
+                  <span class="saved-tab-label">📝</span>
+                  <div class="saved-tab-expand">
+                    <p class="saved-tab-preview">あなたはプロのコピーライターです。以下の文章をより魅力的に書き直してください。</p>
+                    <p class="saved-tab-hint">クリック: コピー ｜ ⌘+クリック: エディタに挿入</p>
+                  </div>
+                </div>
+                <div class="saved-tab" data-prompt="以下のコードをレビューしてください。バグ、パフォーマンスの問題、改善点があれば指摘してください。">
+                  <span class="saved-tab-label">🔍</span>
+                  <div class="saved-tab-expand">
+                    <p class="saved-tab-preview">以下のコードをレビューしてください。バグ、パフォーマンスの問題、改善点があれば指摘してください。</p>
+                    <p class="saved-tab-hint">クリック: コピー ｜ ⌘+クリック: エディタに挿入</p>
+                  </div>
+                </div>
+                <div class="saved-tab" data-prompt="この文章を英語に翻訳してください。自然なネイティブ表現を使い、ビジネスメールに適したトーンでお願いします。">
+                  <span class="saved-tab-label">🌐</span>
+                  <div class="saved-tab-expand">
+                    <p class="saved-tab-preview">この文章を英語に翻訳してください。自然なネイティブ表現を使い、ビジネスメールに適したトーンでお願いします。</p>
+                    <p class="saved-tab-hint">クリック: コピー ｜ ⌘+クリック: エディタに挿入</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Saved tabs tooltip -->
+              <div class="saved-tabs-tooltip">
+                <div class="tooltip-arrow"></div>
+                <p>保存したプロンプトをワンクリックで呼び出せます</p>
+                <p class="tooltip-note">※ 本UIはデモ仕様のため実際の製品とは異なります</p>
+              </div>
+            </div>
+          </div>
+          <!-- Pair bar with tooltip -->
+          <div class="demo-put-pair">
+            <span class="pair-label">Paired:</span>
+            <span class="pair-name">AI Assistant</span>
+            <div class="pair-tooltip">
+              <div class="tooltip-arrow"></div>
+              <p>ペースト先のアプリを選択できます</p>
+            </div>
+          </div>
+          <textarea class="demo-editor" id="putEditor" placeholder="ここにプロンプトを入力..."></textarea>
+          <div class="demo-toolbar">
+            <span class="demo-charcount" id="charCount">0</span>
+            <div class="demo-buttons">
+              <button class="demo-btn demo-btn-copy demo-copy-pc" id="copyBtn" disabled>Copy</button>
+              <button class="demo-btn demo-btn-paste" id="pasteBtn" disabled>Paste</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="demo-disclaimer">※ 当デモは開発中の機能を擬似的に体験していただくためのものです。実際の製品とは相違がある場合があることをご了承ください。</p>
+      <p class="demo-sp-notice">※ 当アプリはmacOS向けソフトウェアであり、実際はスマートフォンには対応しておりません。</p>
+
+      <!-- CTA inline (below demo) -->
+      <div class="cta-inline">
+        <button class="cta-btn cta-btn-white" id="ctaBtnInline">
+          <span class="cta-icon">👀</span>
+          気になる
+          <span class="cta-count cta-count-inline">--</span>
+        </button>
+        <a href="https://x.com/put_prompt" class="cta-x cta-x-white" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          フォローする
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="about-section">
+    <h2 class="about-title">What is put?</h2>
+    <p class="about-desc">
+      AIへのプロンプト入力、こんな不満はありませんか？
+    </p>
+    <div class="about-problems">
+      <div class="problem">
+        <div class="problem-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#E06000" stroke-width="2" stroke-linecap="round"><path d="M9 10l-5 5 5 5"/><path d="M20 4v7a4 4 0 0 1-4 4H4"/></svg></div>
+        <p>改行しようとして<br>途中送信してイライラ</p>
+      </div>
+      <div class="problem">
+        <div class="problem-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#E06000" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></div>
+        <p>テキストエリアが狭くて<br>編集しにくい</p>
+      </div>
+      <div class="problem">
+        <div class="problem-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#E06000" stroke-width="2" stroke-linecap="round"><path d="M17 3a2.85 2.85 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg></div>
+        <p>同じプロンプトを何度も<br>書き直している</p>
+      </div>
+      <div class="problem">
+        <div class="problem-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#E06000" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6"/><path d="M8 11h6"/></svg></div>
+        <p>あのプロンプト<br>どう書くんだっけ？</p>
+      </div>
+    </div>
+    <div class="about-answer-area">
+      <div class="about-answer-line"></div>
+      <p class="about-answer"><strong>put</strong>がすべて解決します。</p>
+      <div class="about-answer-line"></div>
+    </div>
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#E06000" stroke-width="1.5" stroke-linecap="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></div>
+        <h3>自由に書ける</h3>
+        <p>改行も整形も自由自在。<br>プロンプトの編集に集中できます。</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#E06000" stroke-width="1.5" stroke-linecap="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg></div>
+        <h3>保存 &amp; 再利用</h3>
+        <p>よく使うプロンプトを保存。<br>いつでも呼び出して使えます。</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#E06000" stroke-width="1.5" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <h3>シームレスに流し込む</h3>
+        <p>ワンクリックで任意のアプリへ。<br>アプリ切り替えの手間ゼロ。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Release Info ===== -->
+  <section class="release-section">
+    <h2 class="release-title">Release</h2>
+    <div class="release-cards">
+      <div class="release-card">
+        <div class="release-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F5A050" stroke-width="1.5" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg></div>
+        <p class="release-card-label">リリース予定</p>
+        <p class="release-card-value">2026年4月28日（火）</p>
+      </div>
+      <div class="release-card">
+        <div class="release-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F5A050" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg></div>
+        <p class="release-card-label">対応OS</p>
+        <p class="release-card-value">macOS 12 (Monterey) 以上<br><span class="release-card-sub">Windows版は後日対応予定</span></p>
+      </div>
+      <div class="release-card">
+        <div class="release-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F5A050" stroke-width="1.5" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
+        <p class="release-card-label">アプリ形式</p>
+        <p class="release-card-value">ネイティブデスクトップアプリ<br><span class="release-card-sub">軽量・高速。常駐してもリソース消費なし</span></p>
+      </div>
+      <div class="release-card">
+        <div class="release-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F5A050" stroke-width="1.5" stroke-linecap="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <p class="release-card-label">価格</p>
+        <p class="release-card-value">リリース記念価格で提供予定<br><span class="release-card-sub">詳細はXでお知らせします</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA Bottom ===== -->
+  <section class="cta-section">
+    <div class="cta-area">
+      <button class="cta-btn" id="ctaBtn">
+        <span class="cta-icon">👀</span>
+        気になる
+        <span class="cta-count" id="ctaCount">--</span>
+      </button>
+      <a href="https://x.com/put_prompt" class="cta-x" target="_blank" rel="noopener noreferrer">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        フォローする
+      </a>
+      <p class="cta-note">リリースはXでお知らせします</p>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <p>&copy; 2026 put</p>
+  </footer>
+
+  <script src="demo.js"></script>
+</body>
+</html>
