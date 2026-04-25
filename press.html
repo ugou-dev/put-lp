@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Press Kit | Put — AI特化型のプロンプトエディタ</title>
+  <meta name="description" content="Putのプレスキット。プロダクト概要、独自ポイント、ロゴ・スクリーンショット、開発者プロフィールなど、紹介・レビュー用の素材を1ページにまとめています。">
+  <meta property="og:title" content="Press Kit | Put — AI特化型のプロンプトエディタ">
+  <meta property="og:description" content="Putのプレスキット。紹介・レビュー用の素材を1ページに。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://put-prompt.run/press.html">
+  <meta property="og:image" content="https://put-prompt.run/ogp.png">
+  <meta property="og:site_name" content="Put">
+  <link rel="canonical" href="https://put-prompt.run/press.html">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="press.css">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVWM6N0KS3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QVWM6N0KS3');
+  </script>
+</head>
+<body class="press-body">
+
+  <header class="press-header">
+    <div class="press-container">
+      <a href="/" class="press-back">← Put トップへ</a>
+      <h1 class="press-title">Press Kit</h1>
+      <p class="press-tagline">紹介・レビュー用の素材を1ページにまとめています。ご自由にお使いください。</p>
+    </div>
+  </header>
+
+  <main class="press-main press-container">
+
+    <!-- ===== Product Overview ===== -->
+    <section class="press-section">
+      <div class="press-product-head">
+        <img src="press-assets/logo-org.png" alt="Put logo" class="press-logo">
+        <div class="press-product-text">
+          <p class="press-product-core">AI特化型のプロンプトエディタ</p>
+          <p class="press-product-sub">自由に書いて、保存して、シームレスに流し込む。<br>AIをもっと使いこなすためのワークスペースです。</p>
+        </div>
+      </div>
+
+      <ul class="press-meta-list">
+        <li><span class="press-meta-label">公式サイト</span><a href="https://put-prompt.run">put-prompt.run</a></li>
+        <li><span class="press-meta-label">リリース日</span>2026年4月28日</li>
+        <li><span class="press-meta-label">対応OS</span>macOS 14（Sonoma）以降 / Apple Silicon・Intel 両対応</li>
+        <li><span class="press-meta-label">価格</span>通常 900円 / GW記念 500円（5月11日まで）</li>
+      </ul>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="press-section">
+      <h3 class="press-h3">Putとは</h3>
+      <p>
+        <strong>Put</strong> は、ChatGPT や Claude といった AI チャットツールを日常的に使う人のための、macOS専用デスクトップアプリです。
+      </p>
+      <p>
+        チャット欄の狭い入力枠から離れた<strong>独立した編集ワークスペース</strong>で、長文プロンプトを自由に書き、保存し、必要なAIアプリへワンショットで送り込めます。
+      </p>
+      <p>
+        「もっとAIを使いこなしたいけれど、毎回プロンプトを書くのが面倒」「いいプロンプトを思いついても流れていってしまう」――そんな<strong>AIライトユーザー卒業層</strong>のための一段上のワークスペースです。
+      </p>
+    </section>
+
+    <!-- ===== Pain Points ===== -->
+    <section class="press-section">
+      <h3 class="press-h3">解決する課題</h3>
+      <ul class="press-pain-list">
+        <li>チャット欄が狭くて長文プロンプトが書きにくい</li>
+        <li>改行のつもりが Enter で誤送信してしまう</li>
+        <li>過去の良いプロンプトを毎回書き直している</li>
+        <li>AIアプリを行ったり来たりが面倒</li>
+      </ul>
+    </section>
+
+    <!-- ===== Features ===== -->
+    <section class="press-section">
+      <h3 class="press-h3">独自ポイント</h3>
+      <table class="press-feature-table">
+        <tbody>
+          <tr>
+            <th>どこでも呼び出し</th>
+            <td><code>Cmd+Shift+Space</code> でいつでも最前面に呼び出し・隠す</td>
+          </tr>
+          <tr>
+            <th>広いエディタ</th>
+            <td>チャット欄に縛られない自由な編集環境、誤送信なし</td>
+          </tr>
+          <tr>
+            <th>ペアリング送信</th>
+            <td>送信先アプリを選択 → <code>Cmd+Shift+Enter</code> で自動ペースト</td>
+          </tr>
+          <tr>
+            <th>ライブラリ管理</th>
+            <td>タグ・検索で良いプロンプトを資産化、再利用</td>
+          </tr>
+          <tr>
+            <th>完全ローカル動作</th>
+            <td>クラウド非依存、データはユーザーの手元</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ===== Specs ===== -->
+    <section class="press-section">
+      <h3 class="press-h3">技術仕様</h3>
+      <ul class="press-spec-list">
+        <li><span class="press-meta-label">フレームワーク</span>Tauri 2 + React 19 + TypeScript</li>
+        <li><span class="press-meta-label">データ保存</span>ローカル（クラウド同期なし）</li>
+        <li><span class="press-meta-label">必要ストレージ</span>約30MB</li>
+        <li><span class="press-meta-label">対応言語</span>日本語 / 英語（設定で切替可、初回起動時はOS言語で自動判別）</li>
+      </ul>
+    </section>
+
+    <!-- ===== Visuals ===== -->
+    <section class="press-section">
+      <h3 class="press-h3">スクリーンショット</h3>
+      <div class="press-visual-grid">
+        <figure class="press-visual">
+          <button type="button" class="press-visual-trigger" data-src="press-assets/media-edit.jpg" data-caption="エディタ画面">
+            <img src="press-assets/media-edit.jpg" alt="エディタ画面 — プロンプト編集中、ペアリング先アプリにワンショット送信">
+          </button>
+          <figcaption>エディタ画面</figcaption>
+        </figure>
+        <figure class="press-visual">
+          <button type="button" class="press-visual-trigger" data-src="press-assets/media-pair.jpg" data-caption="ペアリング送信">
+            <img src="press-assets/media-pair.jpg" alt="ペアリング送信 — 起動中アプリから送信先を選択">
+          </button>
+          <figcaption>ペアリング送信</figcaption>
+        </figure>
+        <figure class="press-visual">
+          <button type="button" class="press-visual-trigger" data-src="press-assets/media-lib.jpg" data-caption="ライブラリ">
+            <img src="press-assets/media-lib.jpg" alt="ライブラリ — タグ・検索でプロンプトを資産化">
+          </button>
+          <figcaption>ライブラリ</figcaption>
+        </figure>
+        <figure class="press-visual">
+          <button type="button" class="press-visual-trigger" data-src="press-assets/media-set.jpg" data-caption="設定モーダル">
+            <img src="press-assets/media-set.jpg" alt="設定モーダル — 機能設定タブ、日英切替">
+          </button>
+          <figcaption>設定モーダル</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== Demo Video ===== -->
+    <section class="press-section">
+      <h3 class="press-h3">デモ動画</h3>
+      <p class="press-note">⚠️ 仮版（旧UI / X投稿用素材）です。リリース時の正式版に差し替え予定。</p>
+      <div class="press-video-wrap">
+        <video controls preload="metadata" playsinline>
+          <source src="press-assets/demo.mp4" type="video/mp4">
+          お使いのブラウザは動画再生に対応していません。<a href="press-assets/demo.mp4">ダウンロード</a>してご覧ください。
+        </video>
+      </div>
+    </section>
+
+    <!-- ===== Logo Assets ===== -->
+    <section class="press-section">
+      <h3 class="press-h3">ロゴ素材</h3>
+      <div class="press-logo-grid">
+        <div class="press-logo-item press-logo-item-light">
+          <img src="press-assets/logo-org.png" alt="Put logo (orange)">
+          <p>Orange ／ <a href="press-assets/logo-org.png" download>PNG ダウンロード</a></p>
+        </div>
+        <div class="press-logo-item press-logo-item-dark">
+          <img src="press-assets/logo-wht.png" alt="Put logo (white)">
+          <p>White ／ <a href="press-assets/logo-wht.png" download>PNG ダウンロード</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="press-section">
+      <h3 class="press-h3">プレス問い合わせ</h3>
+      <p>
+        <strong>山西孝明（開発者）</strong> ｜ <a href="mailto:info@put-prompt.run">info@put-prompt.run</a>
+      </p>
+      <p>レビュー用ライセンス・素材データ等のご要望もお気軽にどうぞ。返信不要のネタ提供としての送付も歓迎します。</p>
+    </section>
+
+    <!-- ===== Developer ===== -->
+    <section class="press-section">
+      <h3 class="press-h3">開発者について</h3>
+      <p>
+        <strong>山西孝明 / フリーランスWebデザイナー・エンジニア</strong>
+      </p>
+      <p>
+        受託のWeb制作（デザイン〜コーディング〜WordPress一気通貫）を本業としつつ、AI と協働した個人プロダクト開発に取り組んでいます。
+      </p>
+      <p>
+        Put は、Anthropic の Claude（Claude Code）と日々ペアリングしながら開発した、最初のリリースプロダクトです。「AIで自分の仕事を加速させたい」という自身の体験から生まれました。
+      </p>
+      <p>
+        本業や育児に左右されない安定した開発時間を確保するため、本来は早起きが苦手ながら毎朝5時起きの朝活を約1ヶ月間継続。平日朝の2時間を Put 開発に集中投下し、リリースまで漕ぎつけました。
+      </p>
+    </section>
+
+    <!-- ===== License ===== -->
+    <section class="press-section">
+      <h3 class="press-h3">ライセンス・利用について</h3>
+      <ul class="press-license-list">
+        <li><strong>紹介・レビュー</strong>: 自由にご紹介ください（PR表記は対価提供がない場合は不要です）</li>
+        <li><strong>画像・テキスト引用</strong>: 本ページ内の文言・スクリーンショットはレビュー用途で自由に使用可</li>
+        <li><strong>レビュー用ライセンス</strong>: ご希望の方はお問い合わせください</li>
+      </ul>
+    </section>
+
+    <p class="press-updated">Last updated: 2026-04-24</p>
+
+  </main>
+
+  <!-- ===== Lightbox ===== -->
+  <div class="press-lightbox" id="pressLightbox" hidden>
+    <button type="button" class="press-lightbox-close" aria-label="閉じる">×</button>
+    <figure class="press-lightbox-figure" onclick="event.stopPropagation();">
+      <img src="" alt="" id="pressLightboxImg">
+      <figcaption id="pressLightboxCaption"></figcaption>
+    </figure>
+  </div>
+
+  <script src="press.js"></script>
+</body>
+</html>
