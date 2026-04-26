@@ -77,29 +77,15 @@ body {
 }
 
 /* Logo */
-.logo-area {}
-
-.logo-p {
-  font-size: 28px;
-  font-weight: 800;
-  color: var(--text-white);
+.logo-area {
+  display: flex;
+  align-items: center;
 }
 
-.logo-ut {
-  font-size: 22px;
-  font-weight: 600;
-  color: var(--text-white);
-}
-
-.logo-cursor {
-  display: inline-block;
-  width: 12px;
-  height: 20px;
-  background: var(--text-white);
-  margin-left: 2px;
-  vertical-align: baseline;
-  position: relative;
-  top: 2px;
+.logo-img {
+  height: 27px;
+  width: auto;
+  display: block;
 }
 
 /* Copy */
@@ -911,6 +897,19 @@ body {
 .release-card-sub {
   font-size: 12px;
   color: var(--text-dim);
+  font-weight: 400;
+}
+
+.price-promo {
+  color: var(--orange);
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.price-regular {
+  color: var(--text-dim);
+  font-size: 12px;
+  text-decoration: line-through;
   font-weight: 400;
 }
 
