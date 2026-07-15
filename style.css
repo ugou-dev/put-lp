@@ -913,6 +913,14 @@ body {
   font-weight: 400;
 }
 
+.release-card-note {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 11px;
+  color: var(--orange-light);
+  font-weight: 500;
+}
+
 /* ========================
    CTA Bottom Section
    ======================== */
