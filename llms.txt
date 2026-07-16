@@ -1,0 +1,20 @@
+# Put
+
+> AI特化型のプロンプトエディタ（macOSデスクトップアプリ）。自由に書いて、保存して、AIにシームレスに流し込む。ChatGPTやClaudeなどを日常的に使う人のための、プロンプトの下書き・保存・送信ワークスペース。
+
+## 何ができる
+- プロンプトを自由に書いて保存し、使い回す（プロンプト管理）
+- 書いたテキストをワンアクションでAIウィンドウに流し込む（Paste / ⌘+Shift+Enter）
+- 「ChatGPTの長文プロンプトが書きにくい」「プロンプトを毎回書き直すのが面倒」「保存・整理しておきたい」を解決
+
+## 入手
+- 無料（v1.x アップデートも無料）: https://ugou-dev.booth.pm/items/8272398
+- 動作環境: macOS 14 (Sonoma) 以上 / Apple Silicon
+
+## 開発
+- UGOU development（山西孝明 / ugou.dev）
+- Tauri + Rust + React で開発。Developer ID 署名・公証済み。
+- サポートはベストエフォート（GitHub Issues / X）
+
+## リンク
+- 公式サイト: https://put-prompt.run
